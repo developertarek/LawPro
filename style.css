@@ -1,0 +1,1019 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: white;
+    overflow-x: hidden; 
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto; 
+}
+header{
+   position:sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 138px;
+}
+.hero-section{
+    height: auto;
+    padding-bottom: 200px;
+    background-image: url(./assets/hero\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: cover;
+    
+}
+header .header-top{
+    background-color: #3DB36B;
+    padding: 10px 0 ;
+    font-size: 0.9rem;
+}
+header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .icons{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+ header .header-top p{
+    color: rgba(255,255,255,.7);
+    letter-spacing: 3px;
+
+}
+header .header-top p span{
+    color: rgba(255, 255, 255, 0.927);
+}
+.header-main{
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    color:black;
+}
+.header-main nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-main nav h1{
+    font-size: 1.8rem;
+}
+
+ .header-main nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    list-style: none;
+}
+ .header-main nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.769);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+ .header-main nav ul li :active{
+    border-bottom: 1px solid #3DB36B ;
+}
+ .header-main nav ul li :hover{
+    border-bottom: 2px solid #3DB36B ;
+    color: #3DB36B;
+}
+.header-main nav button{
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 1px solid #3DB36B;
+    color: #3DB36B;
+    letter-spacing: 3px;
+}
+ .header-main nav button:hover{
+    transition: 0.2s all ease;
+    background-color: #3DB36B;
+    color: white;
+}
+
+/* small navbar start here */
+.small-nav{
+    display: none;
+}
+header .openbtn, .clsbtn{
+    display: none;
+}
+.small-nav{
+    padding-bottom: 20px;
+}
+.small-nav ul{
+    list-style: none;
+} 
+.small-nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.769);
+    font-size:14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+} 
+.small-nav ul li{
+    padding:20px 0;
+    border-bottom: 1px solid #3db36a3e ;
+    color: #3DB36B;
+    cursor: pointer;
+    margin: 0 auto; 
+}
+.small-nav ul li:hover{
+    color: #3DB36B;
+}
+.small-nav .small-bookbtn{
+    font-size: 1rem;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: 1px solid #3DB36B;
+    color: #3DB36B;
+    letter-spacing: 3px;
+}
+.small-nav .small-bookbtn:hover{
+    transition: 0.2s all ease;
+    background-color: #3DB36B;
+    color: white;
+}
+
+/* main section start from here */
+.hero-section .container{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:200px;
+}
+.hero-section .heading h1{
+    font-size: 60px;
+    margin-bottom: 3rem;
+}
+.hero-section .heading p{
+    font-size:18px;
+    letter-spacing: 3px;
+}
+.hero-section .heading i{
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border: 1px solid white;
+}
+.hero-section .heading a{
+    color: white;
+}
+/* hero form start here  */
+
+.hero-section form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: rgb(48, 47, 47);
+    justify-content: flex-start;
+    padding: 50px;
+}
+.hero-section form h4{
+    font-weight:bold;
+    font-size: 3rem;
+}
+.hero-section input {
+    border: 1px solid #a4a4a49a;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #a4a4a49a;
+}
+.hero-section input:focus {
+    border-color: #3DB36B;
+    outline: none;
+}
+.hero-section form p{
+    font-size: 14px;
+}
+.hero-section form p span{
+    color: #05b147;
+}
+.hero-section  form button{
+    padding: 15px 0;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color:#3DB36B;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.hero-section  form button:hover{
+    background-color: #297d49;
+}
+.hero-section form p input[type="checkbox"]:checked{
+ accent-color: #3DB36B;
+ color: white;
+}
+
+/* welcome section start from here  */
+
+.welcome-section .container{
+    color: rgba(0, 0, 0, 0.745);
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    margin: 150px auto;
+    justify-content: center;
+}
+.welcome-section .heading h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.welcome-section .heading span{
+    font-size: 18px;
+    color: #9b9b9b;
+}
+.welcome-section .heading p{
+    font-size: 17px;
+    color: #4a4a4a;
+    margin-top: 20px;
+    line-height: 27px;
+}
+.welcome-section .container img{
+    width: 550px;
+    height: 350px;
+}
+.welcome-section button{
+    padding: 15px 40px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color:#3DB36B;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.welcome-section button:hover{
+    background-color: #297d49;
+}
+
+
+/* service section start from here */
+.service-section{
+    color:black;
+    background-color: #f9f9f9;
+    padding: 100px 0 ;
+}
+.service-section h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.service-section span{
+    font: size 12px;
+    color: #3d3e3fac;
+}
+.service-section .boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.service-section .box{
+    width: 360px ;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: grab;
+    
+}
+.service-section .box i{
+    font-size: 40px;
+    color: #3DB36B;
+}
+.service-section .box h3{
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #212529;
+    margin: 30px 0 ;
+}
+
+
+.service-section .box p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+.service-section .box button{
+    border: none;
+    margin: 20px 0 ;
+    font-size: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #3DB36B;
+    color: #3DB36B;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.service-section .box button:hover{
+    border-bottom: 1px solid #297d49;
+    color: #297d49;
+}
+/* service section end here */
+
+/* /* emergency section start from here */
+
+.emergency-section{
+    background-image: url(./assets/emergency.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+.emergency-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px 0 ;
+    gap: 50px;
+}
+.emergency-section h1{
+    font-size: 50px;
+    margin-top: 20px;
+    
+}
+.emergency-section .nyc{
+    font-size: 17px;
+    margin-top: 20px;
+    background-color: #ffffff27;    
+    display: inline;
+    padding: 10px 20px;
+
+}
+.emergency-section p{
+    font-size: 18px;
+    background-color:#3DB36B;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-top: 20px ;
+}
+.emergency-section p:hover{
+    background-color:#297d49;
+}
+.emergency-section p span{
+    color:#ffffff80;
+}
+/* emergency section end here */
+
+/* team section start from here */
+.team-section{
+    width: 100vw;
+    margin-bottom: 100px;
+    color: black;
+}
+.team-section .team-heading{
+    margin: 40px 0;
+    text-align: center;
+}
+.team-section .team-heading h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #1d1d1d;
+    text-align: center;
+}
+.team-section  .Professionals{
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #9b9b9b;
+}
+.team-section  button {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #21252954;
+}
+.team-section button h5{
+    font-size: 18px;
+    color: #363535;
+    font-weight: 400;
+}
+.team-section  button p{
+    font-size: 14px;
+    color: #717171;
+}
+.team-section  button img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    
+
+}
+
+/* Style the tab */
+.tab-wrapper{
+    display: flex;
+    max-width:1140px;
+    /* height: 376px; */
+    margin: 0 auto;
+}
+.tab {
+    background-color: #ffffff;
+    width: 30%;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: #fff;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    opacity: 0.5;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #edecec;
+    opacity: 1;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 12px;
+    width: 798px;
+    background-color: #edecec;
+  }
+  .tabcontent .content{
+    display: flex;
+    gap: 30px;
+  }
+  .tabcontent img{
+    width: 250px;
+    height: 330px;
+    border-radius: 5px;
+  }
+  .tab-wrapper .tabcontent .heading{
+    width: 500px;
+  }
+ .tabcontent .content h2{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+  }
+  .tabcontent .content span{
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #6c6c6c; 
+  }
+  .tabcontent .content p{
+    font-size: 18px;
+    color: #1d1d1d;
+    margin: 20px 0;
+    padding-right: 10px;
+  }
+  .tabcontent .content .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 20px;
+    
+  }
+   .tabcontent .fa-facebook{
+    color: rgb(0, 53, 110);
+    font-size: 29px;
+    cursor: pointer;
+  }
+  .tabcontent .heading .icons .fa-twitter{
+    color: #00bfff;
+    font-size: 29px;
+    cursor: pointer;
+  }
+  .tabcontent .heading .icons .fa-pinterest{
+    color: #f22c00;
+    font-size: 29px;
+    cursor: pointer;
+  }
+
+/* case section start from here */
+
+.case-section{
+    background-color: #F9F9F9;
+    color: black;
+    padding: 50px 0;
+}
+.case-section .case-subheading{
+    font-size: 12px;
+    color: #9b9b9b;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+.case-section h1{
+    margin: 20px 0;
+    font-size: 50px;
+    color: #212529;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.case-section .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.case-section .card{
+  padding: 40px;
+  background-color: #FFFFFF;
+  position: relative;
+  margin: 40px 0;
+  border-radius: 10px;
+}
+.case-section .card .tooltip{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 30px 8px 40px;
+    margin-top: 20px;
+    font-size: 13px;
+    background-color: rgba(72, 121, 206, 0.119);
+    color: rgb(72, 121, 206);
+}
+
+  
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #ffffff;
+    border-bottom: 15px solid transparent;
+  }
+.case-section .card .card-heading{
+    font-size: 25px;
+    padding: 25px 0;
+    color: #212529;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.245);
+}
+.case-section .card .card-desc{
+    font-size: 16px;
+    line-height: 26px;
+    padding: 25px 0;
+    color: #4a4a4a;
+}
+.case-section .card  button{
+    border: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #3DB36B;
+    color: #3DB36B;
+    font-size: 13px;
+    font-weight: 700;
+    background-color:#fff;
+    cursor: pointer;
+}
+.case-section .card  button:hover{
+    color: #297d49;
+    border-bottom: 1px solid #297d49;
+}
+
+.quote-section{
+    padding: 100px;
+    text-align: center;
+}
+.quote-section h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.701);
+    line-height: 50px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 40px 0;
+
+}
+.quote-section p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #9b9b9b;
+}
+.quote-section .icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#3DB36B;
+    border-radius: 50%;
+}
+.quote-section i{
+  
+    padding: 30px;
+ 
+    color: #FFFFFF;
+   
+}
+/* quote section end here */
+
+
+/* contact section start from here */
+.contact-section{
+    background-color: #fff;
+    padding: 60px 0;
+}
+.contact-section form{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-section .contact span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #21252963;
+    text-transform: uppercase;
+}
+.contact-section .contact h2{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #212529    ;
+    margin: 30px 0;
+}
+.contact-section form .name ,.phone{
+    display: flex;
+    gap: 30px;
+}
+.contact-section form label{
+    font-size: 12px ;
+    padding: 5px 0;
+    line-height: 18px ;
+    font-weight: 400;
+    color: #9b9b9b    ;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.contact-section form input{
+    width: 350px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #9b9b9b7a;
+    font-size: 15px;
+}
+.contact-section form input:focus{
+   outline: none;
+   border-color: #3DB36B;
+}
+
+.contact-section form textarea{
+    width:100%;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #9b9b9b7a;
+    font-size: 15px;
+}
+.contact-section form textarea:focus{
+    outline: none;
+    border-color: #3DB36B;
+ }
+
+ .contact-section  form button{
+    padding: 25px 50px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color:#3DB36B;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.contact-section  form button:hover{
+    background-color: #297d49;
+}
+
+.contact-section form .address {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+.contact-section form .address .box{
+    text-align: center;
+    background-color: #F9F9F9;
+    width: 350px;
+    height: auto;
+    padding: 40px 20px;
+
+}
+.contact-section form .address .box i{
+    color: #ADB5BD;
+    font-size: 30px;
+}
+.contact-section form .address .box h4{
+    color: #ADB5BD;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.contact-section form .address .box p{
+    font-size: 16px;
+    color: #212529    ;
+    line-height: 26px;
+}
+
+
+/* contact section end here */
+
+
+/* footer section start here */
+
+footer .container{
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+footer .footer-left{
+    display: flex;
+    gap: 30px;
+}
+footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px ;
+}
+footer .icons .icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+footer h2{
+    font-size: 30px;
+}
+footer .icons .icon .fa-facebook{
+    color: #0080ff;
+}
+footer .icons .icon .fa-instagram{
+    color: #ff006f;
+}
+footer .icons .icon .fa-pinterest{
+    color: #fd0000;
+}
+footer .icon-middle i{
+    font-size: 30px;
+    color: gray;
+}
+
+footer .footer-right{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    color: gray;
+}
+footer .tarek{
+    color: gray;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start from here  */
+@media (min-width:1200px){
+    .small-nav{
+        display: none;
+    }
+}
+@media (max-width:1119.98px) {
+    .container{
+        padding: 0 20px;
+    }
+    .case-section .cards{
+        flex-direction: column;
+    }
+    .case-section .card{
+        width: 70%;
+    }
+    .contact-section form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-section form .address{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .small-nav .openbtn, .clsbtn{
+        display: none;
+    }
+   
+
+}
+
+@media (max-width: 991.98px) {
+    header nav ul li a, .book-btn{
+        display: none;
+    }
+    header .openbtn{
+        display: block;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .hero-section form h4{
+        font-weight:bold;
+        font-size: 2rem;
+    }
+    .hero-section .heading h1{
+        font-size: 50px;
+    }
+    .hero-section .container{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+    .hero-section form{
+        margin-top: 39px;
+    }
+    .welcome-section .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcome-section .container .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        gap: 10px;
+    }
+    /* .team-section{
+        height: 100vh;
+    } */
+    .welcome-section .container img {
+        width: 650px;
+        height: 400px;
+        }
+        .emergency-section .container{
+            padding: 30px;
+         }
+    .tab-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab{
+        width: 80%;
+    }
+    .tabcontent{
+        width: 80vw;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .container{
+        padding: 0 20px;
+    }
+    .hero-section{
+        padding-bottom: 50px;
+    }
+    .welcome-section .container img {
+        width: 500px;
+        height: 350px;
+     }
+     .emergency-section .container{
+        padding: 30px;
+     }
+     .emergency-section h1{
+        font-size: 36px;
+     }
+     .tabcontent .content{
+        flex-direction: column;
+        align-items: center;
+     }
+     .tabcontent{
+        width:80vw;
+     }
+     .tab{
+        width: 80vw;
+    }
+    .tab-wrapper .tabcontent .heading{
+        padding: 0 30px;
+    }
+    .tabcontent img{
+        width:70vw;
+        height: auto;
+    }
+    .tab-wrapper .tabcontent .heading{
+        width: 80vw;
+    }
+    .case-section .card{
+        width: 80%;
+    }
+    .contact-section form .name, .phone{
+        flex-direction: column;
+
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    .hero-section form{
+        width: 327px;
+    }
+    .welcome-section .container img {
+        width: 100%;
+        height: 100%;
+        /* width: 450px; */
+        /* height: 350px; */
+    }
+    .service-section h1{
+        font-size: 40px;
+    }
+    .tabcontent{
+        width:100vw;
+     }
+     .tab{
+        width: 100%;
+    }
+    .tab-wrapper .tabcontent .heading{
+        padding: 0 30px;
+    }
+    .tabcontent img{
+        width: 70vw;
+        height: auto;
+    }
+    .tab-wrapper .tabcontent .heading{
+        width: 80vw;
+    }
+    .tab{
+        width: 70vw;
+    }
+    .body{
+        overflow-y: hidden;
+    }
+    .case-section .card{
+        width: 90%;
+    }
+    .contact-section form button{
+        width: 100%;
+    }
+    
+}
